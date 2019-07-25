@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cucumber</groupId>
 	<artifactId>cucumber-gf</artifactId>
@@ -9,7 +9,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<junit.version>4.12</junit.version>
-		<cucumber.version>4.0.0</cucumber.version>
+		<cucumber.version>4.5.4</cucumber.version>
 		<cucumber.pro.version>2.0.4</cucumber.pro.version>
 		<maven.compiler.version>3.3</maven.compiler.version>
 	</properties>
@@ -40,17 +40,6 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
-
-<dependency>
-    <groupId>com.google.guava</groupId>
-    <artifactId>guava</artifactId>
-    <version>25.0-jre</version>
-</dependency>
-
-
-		
-		
 	</dependencies>
 	<build>
 		<plugins>
