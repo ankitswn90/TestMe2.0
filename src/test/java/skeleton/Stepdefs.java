@@ -9,7 +9,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,8 +26,8 @@ public class Stepdefs {
 	static int numberOfProducts; 
 	@Given("Alex is on the login page")
 	public void alex_is_on_the_login_page() {
-		System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.ie.driver", "C:\\driver\\IEDriverServer_Win32_3.14.0\\IEDriverServer.exe");
+		driver = new InternetExplorerDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.get("http://10.232.237.143:443/TestMeApp/login.htm");
